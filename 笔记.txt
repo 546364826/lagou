@@ -1,9 +1,9 @@
 
-ÓÃ»§±í£ºusers 
-ÊôĞÔ
-	Ä¿µÄ£ºpurpose
-	ÓÊÏä£ºemail
-	ÃÜÂë£ºpassword
+ç”¨æˆ·è¡¨ï¼šusers 
+å±æ€§
+	ç›®çš„ï¼špurpose
+	é‚®ç®±ï¼šemail
+	å¯†ç ï¼špassword
 create table users (
 purpose varchar2(20),
 email varchar2(20),
@@ -11,17 +11,17 @@ password varchar2(20)
 );
 
 
-¸öÈËĞÅÏ¢£º preson
-ÊôĞÔ
-	µÇÂ½Ê±µÄÓÊÏä£ºloginemail£¬£¨ÍøÒ³×Ô¶¯Ìá½»£©
-	ÓÃ»§Ãû£ºname
-	ĞÔ±ğ£º   sex
-	Ñ§Î»£º   degree
-	¹¤×÷¾­Ñé£ºhands
-	µç»°£ºphone
-	½ÓÊÜÓÊÏä£ºemail
-	Ïë·¨£ºidea
-	Í·Ïñ£ºheadpic
+ä¸ªäººä¿¡æ¯ï¼š preson
+å±æ€§
+	ç™»é™†æ—¶çš„é‚®ç®±ï¼šloginemailï¼Œï¼ˆç½‘é¡µè‡ªåŠ¨æäº¤ï¼‰
+	ç”¨æˆ·åï¼šname
+	æ€§åˆ«ï¼š   sex
+	å­¦ä½ï¼š   degree
+	å·¥ä½œç»éªŒï¼šhands
+	ç”µè¯ï¼šphone
+	æ¥å—é‚®ç®±ï¼šemail
+	æƒ³æ³•ï¼šidea
+	å¤´åƒï¼šheadpic
 
 create table preson(
 loginemail varchar(20),
@@ -37,16 +37,16 @@ headPic varchar2(100)
 
 
 
-¹«Ë¾»ù±¾ĞÅÏ¢£ºcompany
-ÊôĞÔ
-	¹«Ë¾È«Ãû£ºfullname
-	¼ò³Æ£ºname
-	ÍøÖ·£ºwebsite
-	ËùÔÚ³ÇÊĞ£ºchinacity
-	ĞĞÒµÁìÓò£ºIndustry
-	¹æÄ££ºcsize
-	½×¶Î£ºphase
-	½éÉÜ£ºtemptation
+å…¬å¸åŸºæœ¬ä¿¡æ¯ï¼šcompany
+å±æ€§
+	å…¬å¸å…¨åï¼šfullname
+	ç®€ç§°ï¼šname
+	ç½‘å€ï¼šwebsite
+	æ‰€åœ¨åŸå¸‚ï¼šchinacity
+	è¡Œä¸šé¢†åŸŸï¼šIndustry
+	è§„æ¨¡ï¼šcsize
+	é˜¶æ®µï¼šphase
+	ä»‹ç»ï¼štemptation
 create table company(
 fullname varchar(100),
 name varchar(100),
@@ -59,20 +59,20 @@ temptation varchar(100)
 );
 
 
-¹«Ë¾±êÇ©£ºlabels
-ÊôĞÔ£º
-    ±êÇ©£ºlabel
+å…¬å¸æ ‡ç­¾ï¼šlabels
+å±æ€§ï¼š
+    æ ‡ç­¾ï¼šlabel
 create table lables(
 lable varchar(12)
 );
 
 
-´´Ê¼ÍÅ¶Ó£ºteam
-ÊôĞÔ£º
-	´´Ê¼ÈËĞÕÃû£ºfounder
-	µ±Ç°Ö°Î»£ºposition
-	ĞÂÀËÎ¢²©£ºweibo
-	¼ò½é£ºIntroduction
+åˆ›å§‹å›¢é˜Ÿï¼šteam
+å±æ€§ï¼š
+	åˆ›å§‹äººå§“åï¼šfounder
+	å½“å‰èŒä½ï¼šposition
+	æ–°æµªå¾®åšï¼šweibo
+	ç®€ä»‹ï¼šIntroduction
 create table team(
 founder varchar(20),
 position varchar(20),
@@ -82,12 +82,12 @@ Introduction varchar(500)
 
 
 
-¹«Ë¾²úÆ·£ºproduct
-ÊôĞÔ£º 
-	²úÆ·º£±¨£ºposters     (ÆäÊµÕæÕı´æ´¢µÄÊÇÍ¼Æ¬µÄ			±£´æÂ·¾¶)
-	²úÆ·Ãû³Æ£ºname
-	²úÆ·µØÖ·£ºaddress
-	²úÆ·¼ò½é£ºIntroduction
+å…¬å¸äº§å“ï¼šproduct
+å±æ€§ï¼š 
+	äº§å“æµ·æŠ¥ï¼šposters     (å…¶å®çœŸæ­£å­˜å‚¨çš„æ˜¯å›¾ç‰‡çš„			ä¿å­˜è·¯å¾„)
+	äº§å“åç§°ï¼šname
+	äº§å“åœ°å€ï¼šaddress
+	äº§å“ç®€ä»‹ï¼šIntroduction
 create table product(
 posters varchar(500),
 name varchar(20),
@@ -97,14 +97,12 @@ Introduction varchar(500)
 
 
 
-¹«Ë¾½éÉÜ£ºintroduce
-ÊôĞÔ£º
-	ÆóÒµÎÄ»¯£ºculture
+å…¬å¸ä»‹ç»ï¼šintroduce
+å±æ€§ï¼š
+	ä¼ä¸šæ–‡åŒ–ï¼šculture
 
 
 
 create table introduce(
 culture varchar(500)
 );
-
-git remote add origin git@192.168.2.128:test/myproject.git
